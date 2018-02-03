@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        <a-camera user-height="1.5"></a-camera>
+      <a-plane position="0 0.2 0" rotation="-90 0 0" width="100" height="100" color="#C8E6C9"></a-plane>
+      <a-assets>
+          <img id="my-image1" src="img/img-01.png">
+          <img id="my-image2" src="img/img-02.png">
+          <img id="my-image3" src="img/img-03.png">
+      </a-assets>
+       <a-image position="0 2 -2.3" src="#my-image1" width="2.5" height="3.7" rotation="0 0 0">
+          <a-animation attribute="position" to="0 2.5 -2.3" direction="alternate" repeat="indefinite" dur="1000"></a-animation>
+       </a-image>
+
+
+      <a-image position="-2 2 2.3" src="#my-image2" width="2.3" height="3.7" rotation="0 -45 0">
+          <a-animation attribute="position" to="-2 2.5 2.3" direction="alternate" repeat="indefinite" dur="1000"></a-animation>
+      </a-image>
+
+
+      <a-image position="2 2 2.3" src="#my-image3" width="2.1" height="3.7" rotation="0 45s 0">
+          <a-animation attribute="position" to="2 2.5 2.3" direction="alternate" repeat="indefinite" dur="1000"></a-animation>
+      </a-image>
+
+      <a-sky color="#B2EBF2"></a-sky>
+    </a-scene>
+  </body>
+</html>
