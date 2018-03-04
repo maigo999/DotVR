@@ -1,6 +1,6 @@
 # PixelArtVR
 
-##　概要
+## 概要
 mozillaのA-Frameを使ってWEB上でVRを試してみたいと思い作成
 
 ## 制作日
